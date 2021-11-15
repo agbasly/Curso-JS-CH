@@ -1,0 +1,90 @@
+cheat sheet
+
+--------------------------------------------------------------------------
+Clase 1
+
+String: 
+-es una cadena de caracteres (Se puede poner lo que uno quiera)
+Prompt:
+Console.log(): 
+-Pone entre parentesis lo que queres que la consola muestre
+Alert: 
+-No es tan efectivo como el console.log()
+-Se usa solo para mostrar algo del usuario
+
+--------------------------------------------------------------------------
+Notas importantes:
+-Siempre pedir que mi codigo sea revisado por un senior antes de subirlo a git hub
+-JavaScript es poco estricto, los === sirven para hacer una comparacion estricta, en cambio los == no son estrictos y se permite que entre un string con una variale de tipo numero
+
+
+
+
+
+--------------------------------------------------------------------------
+Clase 2
+
+Variables booleanas: 
+-Se puede poner verdadero o falso/correcto o incorrecto/si o no. Solo dos valores.
+
+Condicionales: 
+-if / else 
+-if / else if
+-Si se cumple una condicion, hago una operacion determinada 
+-Por ejemplo: SI el usuario esat logeado, entra a la pagina.
+
+Operadores de js:
+-&&: signigica Y
+-!: 
+
+--------------------------------------------------------------------------
+Clase 3
+
+Ciclos / bucles 
+
+¿Que son?
+-son un medio rapido y sencillo para hacer algo repetidamente
+-Para hacer una operacion mas de una vez en el programa usamos for, while o do..while
+
+Tipos de bucles
+Ciclos por conteos (for):
+-Repite un bloque de codigo un numero de veces especifica
+-Es mucho mas claro usar el for
+-Por ejemplo: Si se cuantas veces lo voy a repetir uso esta
+Ciclos condicionales (while y do..while):
+-Repiten un bloque de codigo mientras la condicion evaluada es true
+-Por ejemplo: Si no se cuantas veces lo voy a repetir uso esta
+
+Estructura For
+For(desde; hasta ; actualizacion){
+    todo lo que este aca adentro se ejecutara mientras dure el ciclo
+}
+
+Desde: Es la zona en la que se establecen los valores iniciales que controlan el ciclo.
+Hasta: es el unico elemento que decide si se repite o se detiene el ciclo
+Actualizacion: de cuanto en cuanto va la repeticion. Suele ser siempre 1. Por ejemplo si pongo 2, va ir 1-3-5-7
+
+!Ojo con el cero en los ciclos del for!
+i ++ es lo mismo que poner i + 1
+
+Ejemplos practicos
+
+For para contar de 0 a 9:
+for (let i = 0 ; i < 10; i++){
+    alert (i);
+}
+for  para contar de 1 a 10
+for (let i = 1; i <=10; i++ ){
+    alert (i);
+}
+
+Sentencia Break:
+-Se utiliza cuando necesitamos que bajo cierta condicion el ciclo se interrumpa
+-Cuando se escribe dentro de un ciclo for, el mismo se interrumple como si finalizara
+-Ejemplo:
+for(let i = 1; i < 10; i++){
+    if (i == 5){
+        break
+    }
+    console.log("Hola coder")
+}
